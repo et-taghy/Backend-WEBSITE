@@ -1,0 +1,50 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 16px;
+}
+
+.spacer {
+    flex: 1;
+}
+
+button {
+    color: white;
+    text-transform: uppercase;
+    margin-left: 8px;
+}
+
+button.active {
+    font-weight: 600;
+}
+
+.custom-toolbar {
+    background-color: #ff0000;
+}
+@keyframes fadeIn {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  .animated-text {
+    margin-left: 37%;
+    animation: fadeIn 4s ease-in-out infinite;
+  }
+
+  .animated-text {
+    margin-left: 35%;
+    animation: fadeIn 2s ease-in-out;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  

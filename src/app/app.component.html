@@ -1,0 +1,28 @@
+<div *ngIf="!isAdminLoggedIn && !isUserLoggedIn">
+  <mat-toolbar style="color: rgb(96, 96, 224);" class="navbar">
+    <span class="Electro_magick">LOGO</span>
+    <span class="animated-text">Your digital future starts here</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/sign-up" routerLinkActive="active">S'inscrire</button>
+    <button mat-button routerLink="/login" routerLinkActive="active">Se connecter</button>
+  </mat-toolbar>
+</div>
+<div *ngIf="isAdminLoggedIn">
+  <mat-toolbar style="color: rgb(96, 96, 224);" class="navbar">
+    <span class="Electro_magick">LOGO</span>
+    <span class="animated-text">Your digital future starts here</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/admin/dashboard" routerLinkActive="active">Bienvenue</button>
+    <button mat-button routerLinkActive="active" (click)="logout()">Logout</button>
+  </mat-toolbar>
+</div>
+<div *ngIf="isUserLoggedIn">
+  <mat-toolbar style="color: rgb(96, 96, 224);" class="navbar">
+    <span class="Electro_magick">LOGO</span>
+    <span class="animated-text">Your digital future starts here</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/user/accueil" routerLinkActive="active">Accueil</button>
+    <button mat-button routerLinkActive="active" (click)="logout()">Logout</button>
+  </mat-toolbar>
+</div>
+<router-outlet></router-outlet>
